@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlpineJS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <div x-data="{
+        open:open
+    }">
+
+    <div class="box" x-bind:class="open ? 'azul' : 'vermelho'" style="text-align: center;">
+        <p>É tão fácil usar AlpineJS, escreva os suas diretivas nas próprias tags HTML e divirta-se!!</p>
+        <button x-on:click="open = true" class="button">Azul</button>
+        <button x-on:click="open = false" class="button">Vermelho</button>
+    </div>
+</div>
+
+
+<footer class="footer" style="margin-top: auto;">
+    <div class="content has-text-centered">
+      <p>
+        © 2024 AlpineJS - Todos os direitos reservados.
+      </p>
+      <p>
+        Desenvolvido por <a href="https://github.com/Propfend" target="blank"><strong>Luiz Miguel</strong></a>
+      </p>
+      <p>
+          <div>
+            <a href="https://github.com/Propfend" target="_blank"><img src="imagens/github.png" alt="gitHub" style="width: 50px;"></a>
+              <a href="https://www.linkedin.com/in/luiz-miguel-1154bb277/" target="_blank"><img src="imagens/linkedin.png" alt="linkedIn" style="width: 50px;"> </a>
+              <a href="https://wa.me/5583988869118" target="_blank"><img src="imagens/zap.png" alt="discord" style="width: 51px;" ></a>
+              <div>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
